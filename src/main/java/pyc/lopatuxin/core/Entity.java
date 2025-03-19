@@ -1,6 +1,7 @@
 package pyc.lopatuxin.core;
 
 import lombok.Getter;
+import pyc.lopatuxin.core.components.Component;
 
 import java.util.HashMap;
 import java.util.Map;
