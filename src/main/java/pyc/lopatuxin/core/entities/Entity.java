@@ -1,4 +1,4 @@
-package pyc.lopatuxin.core;
+package pyc.lopatuxin.core.entities;
 
 import lombok.Getter;
 import pyc.lopatuxin.core.components.Component;

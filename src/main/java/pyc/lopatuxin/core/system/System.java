@@ -1,6 +1,6 @@
 package pyc.lopatuxin.core.system;
 
-import pyc.lopatuxin.core.Entity;
+import pyc.lopatuxin.core.entities.Entity;
 
 import java.util.List;
 
