@@ -1,6 +1,4 @@
-package pyc.lopatuxin.core.system;
-
-import pyc.lopatuxin.core.entities.Entity;
+package pyc.lopatuxin.core.ecs;
 
 import java.util.List;
 
@@ -12,5 +10,5 @@ import java.util.List;
  */
 public interface System {
 
-    void update(List<Entity> entities);
+    void update(EntityManager entityManager);
 }

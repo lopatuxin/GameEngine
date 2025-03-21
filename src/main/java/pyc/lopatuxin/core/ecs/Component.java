@@ -1,4 +1,4 @@
-package pyc.lopatuxin.core.components;
+package pyc.lopatuxin.core.ecs;
 
 /**
  * Интерфейс `Component` используется для создания компонентов сущностей в ECS.

@@ -1,7 +1,6 @@
-package pyc.lopatuxin.core.entities;
+package pyc.lopatuxin.core.ecs;
 
 import lombok.Getter;
-import pyc.lopatuxin.core.components.Component;
 
 import java.util.HashMap;
 import java.util.Map;

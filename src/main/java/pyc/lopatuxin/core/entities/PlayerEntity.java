@@ -3,6 +3,7 @@ package pyc.lopatuxin.core.entities;
 import pyc.lopatuxin.core.components.movement.PlayerControlComponent;
 import pyc.lopatuxin.core.components.movement.PositionComponent;
 import pyc.lopatuxin.core.components.movement.VelocityComponent;
+import pyc.lopatuxin.core.ecs.Entity;
 
 public class PlayerEntity extends Entity {
 

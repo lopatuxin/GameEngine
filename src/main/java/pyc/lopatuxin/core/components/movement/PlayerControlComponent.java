@@ -1,7 +1,7 @@
 package pyc.lopatuxin.core.components.movement;
 
 import lombok.Getter;
-import pyc.lopatuxin.core.components.Component;
+import pyc.lopatuxin.core.ecs.Component;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

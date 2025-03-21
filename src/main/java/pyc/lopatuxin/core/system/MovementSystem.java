@@ -1,10 +1,9 @@
 package pyc.lopatuxin.core.system;
 
-import pyc.lopatuxin.core.entities.Entity;
 import pyc.lopatuxin.core.components.movement.PositionComponent;
 import pyc.lopatuxin.core.components.movement.VelocityComponent;
-
-import java.util.List;
+import pyc.lopatuxin.core.ecs.EntityManager;
+import pyc.lopatuxin.core.ecs.System;
 
 /**
  * Система движения, обновляющая координаты объектов на основе их скорости.
@@ -16,15 +15,15 @@ import java.util.List;
 public class MovementSystem implements System {
 
     @Override
-    public void update(List<Entity> entities) {
-        entities.forEach(entity -> {
-            if (entity.hasComponent(PositionComponent.class) && entity.hasComponent(VelocityComponent.class)) {
-                PositionComponent positionComponent = entity.getComponent(PositionComponent.class);
-                VelocityComponent velocityComponent = entity.getComponent(VelocityComponent.class);
+    public void update(EntityManager entityManager) {
+        entityManager.getEntitiesWithComponents(PositionComponent.class, VelocityComponent.class)
+                .forEach(entity -> {
+                    PositionComponent positionComponent = entity.getComponent(PositionComponent.class);
+                    VelocityComponent velocityComponent = entity.getComponent(VelocityComponent.class);
 
-                positionComponent.setX(positionComponent.getX() + velocityComponent.getVelocityX());
-                positionComponent.setY(positionComponent.getY() + velocityComponent.getVelocityY());
-            }
-        });
+                    // Обновляем позицию на основе скорости
+                    positionComponent.setX(positionComponent.getX() + velocityComponent.getVelocityX());
+                    positionComponent.setY(positionComponent.getY() + velocityComponent.getVelocityY());
+                });
     }
 }

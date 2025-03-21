@@ -3,7 +3,7 @@ package pyc.lopatuxin.core.components.movement;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import pyc.lopatuxin.core.components.Component;
+import pyc.lopatuxin.core.ecs.Component;
 
 /**
  * Компонент, представляющий положение объекта в игровом мире.
