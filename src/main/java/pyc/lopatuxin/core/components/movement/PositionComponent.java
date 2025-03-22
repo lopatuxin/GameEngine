@@ -16,6 +16,6 @@ import pyc.lopatuxin.core.ecs.Component;
 @AllArgsConstructor
 public class PositionComponent implements Component {
 
-    private float x;
-    private float y;
+    private int x;
+    private int y;
 }
