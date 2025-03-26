@@ -16,6 +16,6 @@ import pyc.lopatuxin.core.ecs.Component;
 @AllArgsConstructor
 public class VelocityComponent implements Component {
 
-    private float velocityX;
-    private float velocityY;
+    private int velocityX;
+    private int velocityY;
 }

@@ -1,6 +1,7 @@
 package pyc.lopatuxin.core.system;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import pyc.lopatuxin.core.ecs.EntityManager;
 import pyc.lopatuxin.core.ecs.System;
 import pyc.lopatuxin.core.render.Renderable;
@@ -18,6 +19,7 @@ import java.awt.*;
  * <p>Это позволяет создать гибкую и расширяемую архитектуру, в которой
  * любой компонент может участвовать в отрисовке, реализуя {@code Renderable}.</p>
  */
+@Getter
 @AllArgsConstructor
 public class RenderSystem implements System {
     private final Graphics graphics;
