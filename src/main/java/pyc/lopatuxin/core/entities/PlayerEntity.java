@@ -9,7 +9,6 @@ public class PlayerEntity extends Entity {
     public PlayerEntity(int startX, int startY) {
         addComponent(new PositionComponent(startX, startY));
         addComponent(new VelocityComponent(0, 0));
-        addComponent(new PlayerControlComponent());
     }
 
     public void setVelocity(int vx, int vy) {
